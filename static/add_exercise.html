@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Exercício Físico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastrar Exercício Físico</h2>
+        <form method="POST">
+            <label for="nome_exercicio">Nome do Exercício:</label>
+            <input type="text" name="nome_exercicio" required><br>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" required></textarea><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <a href="{{ url_for('dashboard') }}">Voltar ao Dashboard</a>
+    </div>
+</body>
+</html>
+
